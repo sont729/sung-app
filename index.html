@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>창세기</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
+<!-- 바깥에서 아무것도 가져오지 않는다.
+     예전에는 구글 서체를 불러 썼다. 그러면 이 페이지를 여는 순간 방문자의
+     IP와 브라우저 정보가 구글로 간다 — 바로 그 페이지가 "제3자에게 제공하는
+     정보가 없습니다"라고 말하는 중에. 방침을 읽으러 온 사람에게 그것을
+     시키는 것은 앞뒤가 맞지 않는다. 기기에 있는 서체만 쓴다(앱과 같은 원칙). -->
 <style>
 :root { --page:#FBF8F0; --ink:#201D17; --dim:rgba(32,29,23,.72);
   --ghost:rgba(32,29,23,.38); --gold:#8A6A2F; --hair:rgba(32,29,23,.15); }
@@ -14,7 +18,8 @@
 }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--page); color:var(--ink);
-  font-family:'Gowun Batang','Apple SD Gothic Neo',serif; line-height:1.85; }
+  font-family:'Apple SD Gothic Neo','Noto Serif KR','Nanum Myeongjo',serif;
+  line-height:1.85; }
 main { max-width:39rem; margin:0 auto; padding:56px clamp(16px,4vw,28px) 96px; }
 h1 { font-size:26px; letter-spacing:.06em; margin:0 0 6px; }
 .sub { color:var(--ghost); font-size:13px; margin:0 0 40px;
